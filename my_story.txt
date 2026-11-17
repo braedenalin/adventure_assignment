@@ -1,0 +1,90 @@
+START_HP 10
+SCENE You are stranded on an island. It is getting colder and darker.
+HP 0
+LOOT 0
+ITEM none
+CHOICES 2
+LABEL Fall asleep out in the open.
+  SCENE You freeze to death :(
+  HP -10
+  LOOT 0
+  ITEM none
+  CHOICES 0
+LABEL Explore into the forest
+  SCENE While you were exploring, you found a sharp rock! You can almost make a tool. But you stumble upon a cave.
+  HP 0
+  LOOT 2
+  ITEM sharp_rock
+  CHOICES 2
+  LABEL Enter a large cave
+    SCENE You walk into a cave, and you found a large bone!
+    HP 0
+    LOOT 3
+    ITEM large_bone
+    CHOICES 3
+    LABEL Go deeper into the cave. Maybe you can sleep here for the night?
+      SCENE You ran into a sleeping bear... and got mauled and died :(
+      HP -50
+      LOOT 0
+      ITEM none
+      CHOICES 0
+    LABEL Stay where you are and smash the rock. Maybe with smaller pieces you can make something?
+      SCENE You made tons of noise... and a sleeping bear in the cave was in there. So you got mauled and died :( Worst of all, you didn't even smash the rock
+      HP -50
+      LOOT 0
+      ITEM none
+      CHOICES 0
+    LABEL Leave the cave. You want to find somewhere else before it becomes night.
+      SCENE On your way out, you go back where you came from, and you found some string on the ground! What now?
+      HP 0
+      LOOT 2
+      ITEM twine
+      CHOICES 1
+      LABEL Make an axe
+        SCENE You made an axe with the rock, bone, and string! What do u do?
+        HP 0
+        LOOT 5
+        ITEM axe
+        CHOICES 2
+        LABEL Collect some wood to make a makeshift shelter
+          SCENE You chopped some wood and made a shelter! However, it is already night time...
+          HP 5
+          LOOT 3
+          ITEM wood
+          CHOICES 1
+          LABEL Sleep in your shelter
+            SCENE You sleep through the night. When you awake, you are surrounded by a rescue crew! Congratulations!
+            HP 5
+            LOOT 2
+            ITEM none
+            CHOICES 0
+        LABEL Go on... a murdering spree?
+          SCENE You kill a bunch of small animals for food. You're stacked! But you're tired, and it is already night...
+          HP -2
+          LOOT 25
+          ITEM raw_meat
+          CHOICES 1
+          LABEL You're exhausted, so you have no choice but fall asleep.
+            SCENE While you were sleeping... a tiger smelled the raw meat you had, and you were mauled :(
+            HP -50
+            LOOT 0
+            ITEM none
+            CHOICES 0
+  LABEL Walk around the cave
+    SCENE As you walk around the cave, you go further and further forwards... until you reach the edge of a cliff??
+    HP -1
+    LOOT 0
+    ITEM none
+    CHOICES 1
+    LABEL Turn back around
+      SCENE You hear a growl... so you quickly disband that idea, and hide in the bushes near the edge.
+      HP -1
+      LOOT 1
+      ITEM none
+      CHOICES 1
+      LABEL Hide in the bushes
+        SCENE You are terrified, and for hours you sit there, trying to fall asleep. But luckily... you were saved by a rescue crew! They saw you at the edge when it became morning!
+        HP 5
+        LOOT 5
+        ITEM none
+        CHOICES 0
